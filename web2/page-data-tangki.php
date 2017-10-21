@@ -147,7 +147,6 @@ $data = $tangki->getAll();
 									if (count($data)):
 										foreach ($data as $key => $value):
 								?>	
-								
 								<div id="tangki-<?php echo $value['id'] ?>" class="progress progress-striped vertical bottom wide" style="width:80px;">
 									<div class="progress-bar progress-bar-info" data-transitiongoal="<?php echo $value['pa'] / $value['max_pa']*100 ?>"></div>
 									<span class="nama-tangki"><?php echo $value['tank'] ?></span>
@@ -165,13 +164,14 @@ $data = $tangki->getAll();
 								<table id="display-tangki" class="table no-margin">
 									<thead>
 										<tr>
-										<th>id</th>
+										<!--<th>id</th> -->
 										<th>Tangki</th>
+										<th>Pumpable</th>
+										<th>Status</th>
 										<th>Level</th>
-										<th>max Level</th>
-										<th>pompable</th>
-										<th>max pompable</th>
-										<th>status</th>
+										<th>Max Level</th>
+										<th>Max Pumpable</th>
+										<th>Upd Terakhir</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -180,13 +180,14 @@ $data = $tangki->getAll();
 												foreach ($data as $key => $value):
 										?>
 											<tr id="detail-tangki-<?php echo $value['id'] ?>"  class="aktiv-<?php echo $value['statusnya'] ?>">
-												<td><?php echo $value['id'] ?></td>
+												<!--<td><?php //echo $value['id'] ?></td> -->
 												<td><?php echo $value['tank'] ?></td>
+												<td><?php echo $value['pa'] ?></td>
+												<td><?php echo $value['statusnya'] ?></td>
 												<td><?php echo $value['level'] ?></td>
 												<td><?php echo $value['max_level'] ?></td>
-												<td><?php echo $value['pa'] ?></td>
 												<td><?php echo $value['max_pa'] ?></td>
-												<td><?php echo $value['statusnya'] ?></td>
+												<td><?php echo $value['time'] ?></td>
 											</tr>
 										<?php
 												endforeach;
