@@ -57,135 +57,7 @@ $data = $topping->get4();
 						<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
 					</form>
 					<!-- end search form -->
-					<!-- navbar menu -->
-					<div id="navbar-menu">
-						<ul class="nav navbar-nav">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-									<i class="lnr lnr-alarm"></i>
-									<span class="notification-dot"></span>
-								</a>
-								<ul class="dropdown-menu notifications">
-									<li class="header"><strong>You have 7 new notifications</strong></li>
-									<li>
-										<a href="#">
-											<div class="media">
-												<div class="media-left">
-													<i class="fa fa-fw fa-flag-checkered text-muted"></i>
-												</div>
-												<div class="media-body">
-													<p class="text">Your campaign <strong>Holiday Sale</strong> is starting to engage potential customers.</p>
-													<span class="timestamp">24 minutes ago</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="media">
-												<div class="media-left">
-													<i class="fa fa-fw fa-exclamation-triangle text-warning"></i>
-												</div>
-												<div class="media-body">
-													<p class="text">Campaign <strong>Holiday Sale</strong> is nearly reach budget limit.</p>
-													<span class="timestamp">2 hours ago</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="media">
-												<div class="media-left">
-													<i class="fa fa-fw fa-bar-chart text-muted"></i>
-												</div>
-												<div class="media-body">
-													<p class="text">Website visits from Facebook is 27% higher than last week.</p>
-													<span class="timestamp">Yesterday</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="media">
-												<div class="media-left">
-													<i class="fa fa-fw fa-check-circle text-success"></i>
-												</div>
-												<div class="media-body">
-													<p class="text">Your campaign <strong>Holiday Sale</strong> is approved.</p>
-													<span class="timestamp">2 days ago</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="media">
-												<div class="media-left">
-													<i class="fa fa-fw fa-exclamation-circle text-danger"></i>
-												</div>
-												<div class="media-body">
-													<p class="text">Error on website analytics configurations</p>
-													<span class="timestamp">3 days ago</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="footer"><a href="#" class="more">See all notifications</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-									<i class="lnr lnr-cog"></i>
-								</a>
-								<ul class="dropdown-menu user-menu menu-icon">
-									<li class="menu-heading">ACCOUNT SETTINGS</li>
-									<li><a href="#"><i class="fa fa-fw fa-edit"></i> <span>Basic</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-bell"></i> <span>Notifications</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-sliders"></i> <span>Preferences</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-lock"></i> <span>Privacy</span></a></li>
-									<li class="menu-heading">BILLING</li>
-									<li><a href="#"><i class="fa fa-fw fa-file-text-o"></i> <span>Invoices</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-credit-card"></i> <span>Payments</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-refresh"></i> <span>Renewals</span></a></li>
-									<li class="menu-button">
-										<a href="#" class="btn btn-primary"><i class="fa fa-rocket"></i> UPGRADE PLAN</a>
-									</li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-									<i class="lnr lnr-question-circle"></i>
-								</a>
-								<ul class="dropdown-menu user-menu">
-									<li>
-										<form class="search-form help-search-form">
-											<input value="" class="form-control" placeholder="How can we help?" type="text">
-											<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
-										</form>
-									</li>
-									<li class="menu-heading">HOW-TO</li>
-									<li><a href="#">Setting up Campaign</a></li>
-									<li><a href="#">Understanding Website Analytics</a></li>
-									<li><a href="#">Boost Your Sales</a></li>
-									<li><a href="#">Knowing Your Audience</a></li>
-									<li class="menu-heading">ACCOUNT</li>
-									<li><a href="#">Change Password</a></li>
-									<li><a href="#">Privacy &amp; Security</a></li>
-									<li><a href="#">Membership</a></li>
-									<li class="menu-heading">BILLING</li>
-									<li><a href="#">Setup Payment</a></li>
-									<li><a href="#">Auto-Renewal Program</a></li>
-									<li><a href="#">Cancellation</a></li>
-									<li class="menu-button">
-										<a href="#" class="btn btn-primary"><i class="fa fa-question-circle"></i> HELP CENTER</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<!-- end navbar menu -->
+					
 				</div>
 			</div>
 		</nav>
@@ -203,7 +75,6 @@ $data = $topping->get4();
 						<a href="#" class="dropdown-toggle user-name" data-toggle="dropdown">Hello, <strong>Admin</strong> <i class="fa fa-caret-down"></i></a>
 						<ul class="dropdown-menu dropdown-menu-right account">
 							<li><a href="#">My Profile</a></li>
-							<li><a href="#">Messages</a></li>
 							<li><a href="#">Settings</a></li>
 							<li class="divider"></li>
 							<li><a href="#">Logout</a></li>
@@ -223,7 +94,7 @@ $data = $topping->get4();
 							</ul> -->
 						</li>
 						<li class="">
-						<a href="forms-advanced.html"><i class="lnr lnr-chart-bars"></i> <span>Topping/Penyaluran</span></a>
+						<a href="page-data-top.php"><i class="lnr lnr-chart-bars"></i> <span>Topping/Penyaluran</span></a>
 							<!-- <ul aria-expanded="true">
 								<li class=""><a href="page-profile.html">User Profile</a></li>
 								<li class=""><a href="page-login.html">Login</a></li>
@@ -270,45 +141,53 @@ $data = $topping->get4();
 				<!-- WEBSITE ANALYTICS -->
 				<div class="dashboard-section">
 					<div class="section-heading clearfix">
-						<h2 class="section-title"><i class="fa fa-pie-chart"></i> Topping &amp; Lossing</h2>
-						<a href="#" class="right">View Full Analytics Reports</a>
+						<h2 class="section-title"><i class="fa fa-pie-chart"></i> Topping &amp; Lossing Hari ini</h2>
+						<!--<a href="#" class="right">View Full Analytics Reports</a> -->
 					</div>
 					<div class="panel-content">
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
 								<div class="number-chart">
 									<div class="mini-stat">
-										<div id="number-chart1" class="inlinesparkline">23,65,89,32,67,38,63,12,34,22</div>
+										<!--<div id="number-chart1" class="inlinesparkline">23,65,89,32,67,38,63,12,34,22</div>-->
+										<img src="./assets/img/topping.png" class="img-rounded" alt="Topping" width="50%" height="50%"> 
+										
 										<!-- <p class="text-muted"><i class="fa fa-caret-up text-success"></i> 19% compared to last week</p> -->
 									</div>
-									<div class="number"><span>22,500 KAL</span> <span>ANGKA TOPPING HARI INI</span></div>
+									<div class="number"><span>22,500 KL</span> <span>Total Topping</span></div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
 								<div class="number-chart">
 									<div class="mini-stat">
-										<div id="number-chart2" class="inlinesparkline">77,44,10,80,88,87,19,59,83,88</div>
+										<!--<div id="number-chart2" class="inlinesparkline">77,44,10,80,88,87,19,59,83,88</div> -->
 										<!-- <p class="text-muted"><i class="fa fa-caret-up text-success"></i> 24% compared to last week</p> -->
+										<img src="./assets/img/lossing.png" class="img-rounded" alt="Topping" width="50%" height="50%"> 
+										
 									</div>
-									<div class="number"><span>245 KL</span> <span>ANGKA LOSSING HARI INI</span></div>
+									<div class="number"><span>245 KL</span> <span>Total Lossing</span></div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
 								<div class="number-chart">
 									<div class="mini-stat">
-										<div id="number-chart3" class="inlinesparkline">99,86,31,72,62,94,50,18,74,18</div>
+										<!--<div id="number-chart3" class="inlinesparkline">99,86,31,72,62,94,50,18,74,18</div>-->
 										<!-- <p class="text-muted"><i class="fa fa-caret-up text-success"></i> 44% compared to last week</p> -->
+										<img src="./assets/img/tangki2.png" class="img-rounded" alt="Topping" width="50%" height="50%"> 
+										
 									</div>
-									<div class="number"><span>1 - 2 - 3 - 4</span> <span>DERET TANGKI TOPPING</span></div>
+									<div class="number"><span>1 - 2 - 3 - 4</span> <span>Tangki Topping</span></div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
 								<div class="number-chart">
 									<div class="mini-stat">
-										<div id="number-chart4" class="inlinesparkline">28,44,70,21,86,54,90,25,83,42</div>
+										<!-- <div id="number-chart4" class="inlinesparkline">28,44,70,21,86,54,90,25,83,42</div> -->
 										<!-- <p class="text-muted"><i class="fa fa-caret-down text-danger"></i> 6% compared to last week</p> -->
+										<img src="./assets/img/tangki2.png" class="img-rounded" alt="Topping" width="50%" height="50%"> 
+										
 									</div>
-									<div class="number"><span>5 - 6 - 7 - 8</span> <span>DERET TNGKI LOSSING</span></div>
+									<div class="number"><span>5 - 6 - 7 - 8</span> <span>Tangki Lossing</span></div>
 								</div>
 							</div>
 						</div>
@@ -325,34 +204,28 @@ $data = $topping->get4();
 						<div class="col-md-4">
 							<!-- REFERRALS -->
 							<div class="panel-content">
-								<h2 class="heading"><i class="fa fa-square"></i> Day Planning</h2>
+								<h2 class="heading"><i class="fa fa-square"></i> Rencana Hari Ini</h2>
 								<ul class="list-unstyled list-referrals">
 									<li>
-										<p><span class="value">3,454</span><span class="text-muted">Topping Estimate</span></p>
+										<p><span class="value">3,454 KL</span><span class="text-muted">Topping</span></p>
 										<div class="progress progress-xs progress-transparent custom-color-blue">
 											<div class="progress-bar" data-transitiongoal="87"></div>
 										</div>
 									</li>
 									<li>
-										<p><span class="value">2,102</span><span class="text-muted">Lossing Use 2 - 3 - 4</span></p>
+										<p><span class="value">2,102 KL</span><span class="text-muted">Lossing</span></p>
 										<div class="progress progress-xs progress-transparent custom-color-purple">
 											<div class="progress-bar" data-transitiongoal="34"></div>
 										</div>
 									</li>
 									<li>
-										<p><span class="value">2,874</span><span class="text-muted">Topping Use 1 - 5 - 8</span></p>
-										<div class="progress progress-xs progress-transparent custom-color-green">
-											<div class="progress-bar" data-transitiongoal="67"></div>
-										</div>
-									</li>
-									<li>
-										<p><span class="value">2,623</span><span class="text-muted">Service Tank 6</span></p>
+										<p><span class="value">1 unit </span><span class="text-muted">Tank on Maintenance</span></p>
 										<div class="progress progress-xs progress-transparent custom-color-yellow">
 											<div class="progress-bar" data-transitiongoal="54"></div>
 										</div>
 									</li>
 									<li>
-										<p><span class="value">2,623</span><span class="text-muted">Refuller Maintenence ref1, ref2</span></p>
+										<p><span class="value">2 unit</span><span class="text-muted">Refuler on Maintenance</span></p>
 										<div class="progress progress-xs progress-transparent custom-color-orange">
 											<div class="progress-bar" data-transitiongoal="54"></div>
 										</div>
@@ -364,7 +237,7 @@ $data = $topping->get4();
 						<div class="col-md-4">
 							<div class="panel-content">
 								<!-- BROWSERS -->
-								<h2 class="heading"><i class="fa fa-square"></i> 4 Data Terakhir Topping</h2>
+								<h2 class="heading"><i class="fa fa-square"></i> Topping Terakhir</h2>
 								<div class="table-responsive">
 									<table id="last4topping" class="table no-margin">
 										<thead>
@@ -399,204 +272,13 @@ $data = $topping->get4();
 					</div>
 				</div>
 				<!-- END WEBSITE ANALYTICS -->
-				<!-- SALES SUMMARY -->
-				<div class="dashboard-section">
-					<div class="section-heading clearfix">
-						<h2 class="section-title"><i class="fa fa-shopping-basket"></i> Sales Summary</h2>
-						<a href="#" class="right">View Sales Reports</a>
-					</div>
-					<div class="row">
-						<div class="col-md-3">
-							<div class="panel-content">
-								<h3 class="heading"><i class="fa fa-square"></i> Today</h3>
-								<ul class="list-unstyled list-justify large-number">
-									<li class="clearfix">Earnings <span>$215</span></li>
-									<li class="clearfix">Sales <span>47</span></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-9">
-							<div class="panel-content">
-								<h3 class="heading"><i class="fa fa-square"></i> Sales Performance</h3>
-								<div class="row">
-									<div class="col-md-6">
-										<table class="table">
-											<thead>
-												<tr>
-													<th>&nbsp;</th>
-													<th>Last Week</th>
-													<th>This Week</th>
-													<th>Change</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th>Earnings</th>
-													<td>$2752</td>
-													<td><span class="text-info">$3854</span></td>
-													<td><span class="text-success">40.04%</span></td>
-												</tr>
-												<tr>
-													<th>Sales</th>
-													<td>243</td>
-													<td>
-														<div class="text-info">322</div>
-													</td>
-													<td><span class="text-success">32.51%</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div class="col-md-6">
-										<div id="chart-sales-performance">Loading ...</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-8">
-							<div class="panel-content">
-								<h3 class="heading"><i class="fa fa-square"></i> Recent Purchases</h3>
-								<div class="table-responsive">
-									<table class="table table-striped no-margin">
-										<thead>
-											<tr>
-												<th>Order No.</th>
-												<th>Name</th>
-												<th>Amount</th>
-												<th>Date &amp; Time</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><a href="#">763648</a></td>
-												<td>Steve</td>
-												<td>$122</td>
-												<td>Oct 21, 2016</td>
-												<td><span class="label label-success">COMPLETED</span></td>
-											</tr>
-											<tr>
-												<td><a href="#">763649</a></td>
-												<td>Amber</td>
-												<td>$62</td>
-												<td>Oct 21, 2016</td>
-												<td><span class="label label-warning">PENDING</span></td>
-											</tr>
-											<tr>
-												<td><a href="#">763650</a></td>
-												<td>Michael</td>
-												<td>$34</td>
-												<td>Oct 18, 2016</td>
-												<td><span class="label label-danger">FAILED</span></td>
-											</tr>
-											<tr>
-												<td><a href="#">763651</a></td>
-												<td>Roger</td>
-												<td>$186</td>
-												<td>Oct 17, 2016</td>
-												<td><span class="label label-success">SUCCESS</span></td>
-											</tr>
-											<tr>
-												<td><a href="#">763652</a></td>
-												<td>Smith</td>
-												<td>$362</td>
-												<td>Oct 16, 2016</td>
-												<td><span class="label label-success">SUCCESS</span></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="panel-content">
-								<h3 class="heading"><i class="fa fa-square"></i> Top Products</h3>
-								<div id="chart-top-products" class="chartist"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- END SALES SUMMARY -->
-				<!-- CAMPAIGN -->
-				<div class="dashboard-section">
-					<div class="section-heading clearfix">
-						<h2 class="section-title"><i class="fa fa-flag-checkered"></i> Campaign</h2>
-						<a href="#" class="right">View All Campaigns</a>
-					</div>
-					<div class="panel-content">
-						<div class="row margin-bottom-15">
-							<div class="col-md-8 col-sm-7 left">
-								<div id="demo-line-chart" class="ct-chart"></div>
-							</div>
-							<div class="col-md-4 col-sm-5 right">
-								<div class="row margin-bottom-30">
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">Impression</span>
-											<br><strong>32,743</strong></p>
-									</div>
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">Clicks</span>
-											<br><strong>1423</strong></p>
-									</div>
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">CTR</span>
-											<br><strong>4,34%</strong></p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">Cost</span>
-											<br><strong>$42.69</strong></p>
-									</div>
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">CPC</span>
-											<br><strong>$0,03</strong></p>
-									</div>
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">Budget</span>
-											<br><strong>$200</strong></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="action-buttons">
-							<a href="#" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Add Budget</a> <a href="#" class="btn btn-default"><i class="fa fa-file-text-o"></i> View Campaign Details</a>
-						</div>
-					</div>
-				</div>
-				<!-- END CAMPAIGN -->
-				<!-- SOCIAL -->
-				<div class="dashboard-section no-margin">
-					<div class="section-heading clearfix">
-						<h2 class="section-title"><i class="fa fa-user-circle"></i> Social <span class="section-subtitle">(7 days report)</span></h2>
-						<a href="#" class="right">View Social Reports</a>
-					</div>
-					<div class="panel-content">
-						<div class="row">
-							<div class="col-md-3 col-sm-6">
-								<p class="metric-inline"><i class="fa fa-thumbs-o-up"></i> +636 <span>LIKES</span></p>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<p class="metric-inline"><i class="fa fa-reply-all"></i> +528 <span>FOLLOWERS</span></p>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<p class="metric-inline"><i class="fa fa-envelope-o"></i> +1065 <span>SUBSCRIBERS</span></p>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<p class="metric-inline"><i class="fa fa-user-circle-o"></i> +201 <span>USERS</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- END SOCIAL -->
+				
 			</div>
 		</div>
 		<!-- END MAIN CONTENT -->
 		<div class="clearfix"></div>
 		<footer>
-			<p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
+			<p class="copyright">&copy; 2017 <a href="#" target="_blank">Pertamina</a>. All Rights Reserved.</p>
 		</footer>
 	</div>
 	<!-- END WRAPPER -->
@@ -643,16 +325,16 @@ $data = $topping->get4();
 
 		// traffic sources
 		var dataPie = {
-			series: [45, 25, 30]
+			series: [24011, 45596, 58109, 57942, 99622, 0, 78053, 97520]
 		};
 
-		var labels = ['Direct', 'Organic', 'Referral'];
+		var labels = ['T01', 'T02', 'T03','T04', 'T05', 'T06','T07', 'T08'];
 		var sum = function(a, b) {
 			return a + b;
 		};
 
 		new Chartist.Pie('#demo-pie-chart', dataPie, {
-			height: "270px",
+			height: "360px",
 			labelInterpolationFnc: function(value, idx) {
 				var percentage = Math.round(value / dataPie.series.reduce(sum) * 100) + '%';
 				return labels[idx] + ' (' + percentage + ')';

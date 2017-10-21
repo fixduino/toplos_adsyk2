@@ -2592,8 +2592,10 @@ ul.list-connected-app > li:first-child .connected-app {
 
 ul.list-connected-app > li:last-child .connected-app {
   border-bottom: none; }
-.aktiv-201 {
-  background-color: #e8e8e8;
+.aktiv-top-Active {
+  background-color: rgb(87, 219, 87);
 }
-
+.aktiv-los-Active {
+  background-color: rgb(218, 221, 50);
+}
 /*# sourceMappingURL=main.css.map */

@@ -11,29 +11,7 @@
 	$token=$_GET['token'];
 	
 	$sql=mysql_query("select id from tb_tank where status='100'");
-	/*every time it fetches the row, adds it to array...*/
-	// while($r[]=mysql_fetch_array($sql));
-	// echo "<pre>";
-	// print_r ($r);
-	
-	// echo "</pre>";
-	// foreach ($r as $no) {
-    // $qupd_tank = mysql_query("UPDATE tb_tank SET status = '101' WHERE id = '{$no}' LIMIT 1;");
-	
-	// }
-    // $deretTop=$_GET['deretTop'];
-	// if (isset($_GET['deretTop'])) {
-		// $d = explode("-", $_GET['deretTop']);
-		// echo $d[0]; // ini 2
-		// echo $d[1]; // ini 5
-		// echo $d[2]; // ini 4
-		// echo $d[3]; // ini 4
-		// echo $d[4]; // ini 4
-		// echo $d[5]; // ini 4
-		// echo $d[6]; // ini 4
-		// echo $d[7]; // ini 4
-		
-		// if (isset($_GET['deret'])) {
+
 	//ubah semua nonaktif  dulu
 	//$cari101 = mysql_query("select id from tb_tank where status='101'");
 	for ($x = 1; $x < 9; $x++) {

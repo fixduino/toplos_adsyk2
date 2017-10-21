@@ -50,6 +50,20 @@ INNER JOIN tb_act ON tb_tank.status = tb_act.id
         $sth->execute(array($this->id, $this->tank, $this->level, $this->max_level, $this->pa, $this->max_pa, $this->status, $this->time, $this->deadstok, $this->sisipan));
     }
 
+   
+    // for ($x = 1; $x < 9; $x++) {
+   // echo "The number is: $x <br>";
+	//$qupd_tank = mysql_query("UPDATE tb_tank SET status = '100' WHERE id = '{$x}' LIMIT 1;");
+	//}
+    
+    public function update100() { //UPDATE tb_tank SET status = '100' WHERE id = '{$x}' LIMIT 1;
+        for ($x = 1; $x < 9; $x++) {
+        // $sth = $this->DBH->prepare('UPDATE tb_tank SET id = ?,tank = ?,level = ?,max_level = ?,pa = ?,max_pa = ?,status = ?,time = Now(),deadstok = ?,sisipan = ? WHERE tank_id = ?');
+         $sth = $this->DBH->prepare('UPDATE tb_tank SET status = "100" WHERE id = "{$x}" LIMIT 1');
+        $sth->execute(array($this->id, $this->status));
+        }
+    }
+
     public function delete() {
         $sth = $this->DBH->prepare('DELETE FROM tb_tank WHERE $tank_id = ?');
         $sth->execute(array($this->tank_id));

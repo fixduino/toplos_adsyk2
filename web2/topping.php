@@ -13,7 +13,9 @@ class Topping extends DBConnect {
 
     }
     public function getAll(){
-        $sth = $this->DBH->prepare('SELECT id,time,ref,qty_req,tank_asal FROM tb_topp');
+        $sth = $this->DBH->prepare('SELECT tb_topp.*, tb_ref.kode AS kode FROM tb_topp
+        INNER JOIN tb_ref ON tb_topp.ref = tb_ref.id
+         GROUP BY tb_topp.id');
         $sth->execute();
 
         $data = $sth->fetchAll();
