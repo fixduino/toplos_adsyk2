@@ -316,7 +316,7 @@ $dataTotalTop = $totalTopE ->getTotalTop();
 						<div class="col-md-4">
 							<!-- TRAFFIC SOURCES -->
 							<div class="panel-content">
-								<h2 class="heading"><i class="fa fa-square"></i> Grafik Pumpable Tangki</h2>
+								<h2 class="heading"><i class="fa fa-square"></i> Pumpable Tangki</h2>
 								<div id="demo-pie-chart" class="ct-chart"></div>
 							</div>
 							<!-- END TRAFFIC SOURCES -->
