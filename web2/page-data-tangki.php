@@ -213,8 +213,8 @@ $data = $tangki->getAll();
 						<div class="panel-content">
 							<h4>Detail Tangki</h4>
 							<div class="table-responsive">
-								<table id="display-tangki" class="table no-margin">
-									<thead style="">
+								<table id="display-tangki" class="table no-margin table-striped table-bordered table-hover">
+									<thead>
 										<tr>
 										<!--<th>id</th> -->
 										<th>Tangki</th>

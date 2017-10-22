@@ -56,6 +56,24 @@ class Topping extends DBConnect {
         $dataLosLain = $sth->fetchAll();
         return $dataLosLain;
     }
+
+    public function getTotalTop() { //total top this day
+        $sth = $this->DBH->prepare('SELECT tb_topp.id, DATE_FORMAT(tb_topp.time, "%Y-%m-%d"), SUM(tb_topp.qty_req) AS totaltop 
+        FROM tb_topp 
+        WHERE DATE(TIME) = CURDATE()');
+        $sth->execute();
+
+        $dataTotalTop = $sth->fetchAll();
+        return $dataTotalTop;
+    }
+    public function getTotalLos() {
+        $sth = $this->DBH->prepare('SELECT SUM(qty_req) AS totallos
+        FROM tb_los');
+        $sth->execute();
+
+        $dataTotalLos= $sth->fetchAll();
+        return $dataTotalLos;
+    }
     public function get($id) {
         $sth = $this->DBH->prepare('SELECT id,time,ref,qty_req,tank_asal Form tb_topp');
         $sth->execute(array($id));

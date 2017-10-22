@@ -21,6 +21,9 @@ $dataLosActive = $losC ->getLosActive();
 $losD = new Topping();
 $dataLosLain = $losD ->getLosLain();
 
+$totalTopE = new Topping();
+$dataTotalTop = $totalTopE ->getTotalTop();
+
 
 ?>
 
@@ -220,7 +223,15 @@ $dataLosLain = $losD ->getLosLain();
 							
 										<!-- <p class="text-muted"><i class="fa fa-caret-up text-success"></i> 19% compared to last week</p> -->
 									</div>
-									<div class="number"><span>22,500 KL</span> <span>Total Topping</span></div>
+									<?php
+									if (count($dataTotalTop)):
+										foreach ($dataTotalTop as $key => $value):
+									?>							
+										<div class="number"><span><?php echo '<b>'.$value['totaltop'].'</b>' ?> L</span> <span>Total Topping</span></div>
+									<?php
+									endforeach;
+									endif;
+									?>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
@@ -231,7 +242,7 @@ $dataLosLain = $losD ->getLosLain();
 										<img src="./assets/img/lossing.png" class="img-rounded" alt="Topping" width="30%" height="30%"> 
 										
 									</div>
-									<div class="number"><span>245 KL</span> <span>Total Lossing</span></div>
+									<div class="number"><span>0 L</span> <span>Total Lossing</span></div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
@@ -258,8 +269,6 @@ $dataLosLain = $losD ->getLosLain();
 									if (count($dataTopActive)):
 										foreach ($dataTopActive as $key => $value):
 									?>
-
-									
 									<div class="number"><span><?php echo '<b>'.$value['id'].'</b> -'.$topLaine ?></span> <span>Tangki Topping</span></div>
 									<?php
 									endforeach;

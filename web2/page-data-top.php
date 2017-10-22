@@ -194,14 +194,14 @@ $data = $topping->getAll();
 						<div class="panel-content">
 							<!--<h4>Detail Tangki</h4>-->
 							<div class="table-responsive">
-								<table id="display-tangki" class="table no-margin">
+								<table id="display-tangki" class="table no-margin table-striped table-bordered table-hover">
 									<thead>
 										<tr>
-										<th>id</th>
-										<th>waktu</th>
-										<th>refuler</th>
-										<th>quantity</th>
-										<th>tank asal</th>
+										<th>Id</th>
+										<th>Waktu</th>
+										<th>Refuler</th>
+										<th>Quantity</th>
+										<th>Tangki Asal</th>
 										</tr>
 									</thead>
 									<tbody>
