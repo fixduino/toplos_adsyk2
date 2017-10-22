@@ -159,7 +159,7 @@ $dataTotalTop = $totalTopE ->getTotalTop();
 			</div>
 		</nav>
 		<!-- END NAVBAR -->
-		<!-- LEFT SIDEBAR -->
+		<!-- LEFT SIDEBAR   style="background-color:#0071BC;" -->
 		<div id="left-sidebar" class="sidebar">
 			<button type="button" class="btn btn-xs btn-link btn-toggle-fullwidth">
 				<span class="sr-only">Toggle Fullwidth</span>

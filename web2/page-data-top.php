@@ -192,10 +192,10 @@ $data = $topping->getAll();
 					<div class="col-md-12">
 
 						<div class="panel-content">
-							<!--<h4>Detail Tangki</h4>-->
+							<!--<h4>Detail Tangki #BAD317 7CA4DD </h4>-->
 							<div class="table-responsive">
 								<table id="display-tangki" class="table no-margin table-striped table-bordered table-hover">
-									<thead>
+									<thead  style="background-color:#5C8ED4;"> 
 										<tr>
 										<th>Id</th>
 										<th>Waktu</th>
