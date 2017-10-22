@@ -6,7 +6,7 @@ require_once 'DBConnect.php';
 require_once 'tangki.php';
 $tangki = new Tangki();
 $data = $tangki->getAll();
-$data = $tangki->getAll();
+// $data = $tangki->getAll();
 ?>
 <head>
 	<title>Dashboard | pertamina DPPU Adisucipto</title>
@@ -47,14 +47,95 @@ $data = $tangki->getAll();
 				</div>
 				<!-- end logo -->
 				<div class="navbar-right">
-					<!-- search form -->
-					<form id="navbar-search" class="navbar-form search-form">
-						<input value="" class="form-control" placeholder="Search here..." type="text">
-						<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
-					</form>
-					<!-- end search form -->
-					
+				<!-- search form -->
+				<!--<form id="navbar-search" class="navbar-form search-form">
+					<input value="" class="form-control" placeholder="Search here..." type="text">
+					<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
+				</form> -->
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+								<i class="lnr lnr-alarm"></i>
+								<span class="notification-dot"></span>
+							</a>
+							<ul class="dropdown-menu notifications">
+								<li class="header"><strong>You have 7 new notifications</strong></li>
+								<li>
+									<a href="#">
+										<div class="media">
+											<div class="media-left">
+												<i class="fa fa-fw fa-flag-checkered text-muted"></i>
+											</div>
+											<div class="media-body">
+												<p class="text">Your campaign <strong>Holiday Sale</strong> is starting to engage potential customers.</p>
+												<span class="timestamp">24 minutes ago</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="media">
+											<div class="media-left">
+												<i class="fa fa-fw fa-exclamation-triangle text-warning"></i>
+											</div>
+											<div class="media-body">
+												<p class="text">Campaign <strong>Holiday Sale</strong> is nearly reach budget limit.</p>
+												<span class="timestamp">2 hours ago</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="media">
+											<div class="media-left">
+												<i class="fa fa-fw fa-bar-chart text-muted"></i>
+											</div>
+											<div class="media-body">
+												<p class="text">Website visits from Facebook is 27% higher than last week.</p>
+												<span class="timestamp">Yesterday</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="media">
+											<div class="media-left">
+												<i class="fa fa-fw fa-check-circle text-success"></i>
+											</div>
+											<div class="media-body">
+												<p class="text">Your campaign <strong>Holiday Sale</strong> is approved.</p>
+												<span class="timestamp">2 days ago</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="media">
+											<div class="media-left">
+												<i class="fa fa-fw fa-exclamation-circle text-danger"></i>
+											</div>
+											<div class="media-body">
+												<p class="text">Error on website analytics configurations</p>
+												<span class="timestamp">3 days ago</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="footer"><a href="#" class="more">See all notifications</a></li>
+							</ul>
+						</li>
+					</ul>
 				</div>
+					
+				<!-- end search form -->
+				
+			</div>
+		
 			</div>
 		</nav>
 		<!-- END NAVBAR -->
@@ -78,49 +159,20 @@ $data = $tangki->getAll();
 					</div>
 				</div>
 				<nav id="left-sidebar-nav" class="sidebar-nav">
-					<ul id="main-menu" class="metismenu">
-						<li class="active"><a href="index.php"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li class="">
-							<a href="page-data-tangki.php"><i class="lnr lnr lnr-drop"></i> <span>Data Tangki</span></a>
-							<!-- <ul aria-expanded="true">
-								<li class=""><a href="ui-tabs.html">Tabs</a></li>
-								<li class=""><a href="ui-buttons.html">Buttons</a></li>
-								<li class=""><a href="ui-bootstrap.html">Bootstrap UI</a></li>
-								<li class=""><a href="ui-icons.html"><span>Icons</span></a></li>
-							</ul> -->
-						</li>
-						<li class="">
-							<a href="page-data-top.php"><i class="lnr lnr-chart-bars"></i> <span>Topping/Penyaluran</span></a>
-							<!-- <ul aria-expanded="true">
-								<li class=""><a href="page-profile.html">User Profile</a></li>
-								<li class=""><a href="page-login.html">Login</a></li>
-								<li class=""><a href="page-register.html">Register</a></li>
-								<li class=""><a href="page-lockscreen.html">Lockscreen</a></li>
-								<li class=""><a href="page-forgot-password.html">Forgot Password</a></li>
-								<li class=""><a href="page-404.html">Page 404</a></li>
-								<li class=""><a href="page-500.html">Page 500</a></li>
-							</ul> -->
-						</li>
-						<!-- <li class="">
-							<a href="#forms" class="has-arrow" aria-expanded="false"><i class="lnr lnr-pencil"></i> <span>Forms</span></a>
-							<ul aria-expanded="true">
-								<li class=""><a href="forms-validation.html">Form Validation</a></li>
-								<li class=""><a href="forms-advanced.html">Advanced Form Elements</a></li>
-								<li class=""><a href="forms-basic.html">Basic Form Elements</a></li>
-								<li class=""><a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a></li>
-								<li class=""><a href="forms-texteditor.html">Text Editor</a></li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#charts" class="has-arrow" aria-expanded="false"><i class="lnr lnr-chart-bars"></i> <span>Charts</span></a>
-							<ul aria-expanded="true">
-								<li class=""><a href="charts-chartist.html">Chartist</a></li>
-								<li class=""><a href="charts-sparkline.html">Sparkline Chart</a></li>
-							</ul>
-						</li>
-						<li class=""><a href="notifications.html"><i class="lnr lnr-alarm"></i> <span>Notifications</span> <span class="badge bg-danger">15</span></a></li>
-						<li class=""><a href="typography.html"><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li> -->
-					</ul>
+				<ul id="main-menu" class="metismenu">
+					<li class="active">
+						<a href="index.php" class="has-arrow"><i class="lnr lnr-home"></i> <span>Dashboard</span></a>
+					</li>
+					<li class="">
+						<a href="page-data-tangki.php" class="has-arrow"><i class="lnr lnr lnr-drop"></i> <span>Tangki</span></a>
+					</li>
+					<li class="">
+						<a href="page-data-top.php" class="has-arrow"><i class="lnr lnr-chart-bars"></i> <span>Topping</span></a>
+					</li>
+					<li class="">
+						<a href="page-setting.php" class="has-arrow" aria-expanded="false"><i class="lnr lnr-cog"></i> <span>Setting</span></a>
+					</li>
+				</ul>
 				</nav>
 				<!-- <div style="padding: 30px; text-align: center;">
 					<h2 style="font-size: 16px; margin-bottom: 15px; font-weight: 700;">Other Similar Template</h2>
@@ -139,7 +191,7 @@ $data = $tangki->getAll();
 				<div class="row">
 					<div class="col-md-12">
 						<!-- BOOTSTRAP PROGRESS BARS -->
-						<div class="panel-content">
+						<div class="panel-content text-center">
 							<!--<h4>Status Tangki</h4> -->
 							<div style="height: 200px;">
 								<!-- need predefined height -->
@@ -147,9 +199,9 @@ $data = $tangki->getAll();
 									if (count($data)):
 										foreach ($data as $key => $value):
 								?>	
-								<div id="tangki-<?php echo $value['id'] ?>" class="progress progress-striped vertical bottom wide" style="width:80px;">
+								<div id="tangki-<?php echo $value['id'] ?>" class="progress progress-striped vertical bottom wide" style="width:95px;">
 									<div class="progress-bar progress-bar-info" data-transitiongoal="<?php echo $value['pa'] / $value['max_pa']*100 ?>"></div>
-									<span class="nama-tangki"><?php echo $value['tank'] ?></span>
+									<span class="nama-tangki"><?php echo '<b>'.$value['tank'].'</b>' ?></span>
 								</div>
 								
 								<?php
@@ -162,14 +214,15 @@ $data = $tangki->getAll();
 							<h4>Detail Tangki</h4>
 							<div class="table-responsive">
 								<table id="display-tangki" class="table no-margin">
-									<thead>
+									<thead style="">
 										<tr>
 										<!--<th>id</th> -->
 										<th>Tangki</th>
 										<th>Pumpable</th>
 										<th>Status</th>
-										<th>Level</th>
-										<th>Max Level</th>
+										<th>Target Pa</th>
+										 <th>Level</th>
+										<!--<th>Max Level</th> -->
 										<th>Max Pumpable</th>
 										<th>Upd Terakhir</th>
 										</tr>
@@ -184,8 +237,9 @@ $data = $tangki->getAll();
 												<td><?php echo $value['tank'] ?></td>
 												<td><?php echo $value['pa'] ?></td>
 												<td><?php echo $value['statusnya'] ?></td>
-												<td><?php echo $value['level'] ?></td>
-												<td><?php echo $value['max_level'] ?></td>
+												<td><?php echo $value['patarget'] ?></td>
+												 <td><?php echo $value['level'] ?></td>
+												<!-- <td><?php echo $value['max_level'] ?></td> -->
 												<td><?php echo $value['max_pa'] ?></td>
 												<td><?php echo $value['time'] ?></td>
 											</tr>
@@ -197,28 +251,7 @@ $data = $tangki->getAll();
 								</table>
 							</div>
 						</div>
-						<div class="panel-content">
-							<h4>set aktif topping &amp; adjust deret tank topping</h4>
-							<div class="row">
-								<div class="col-md-4">
-									<form action="">
-										<div class="form-group">
-											<label for="set-topping-aktif" class="control-label">topping aktif</label>
-											<input type="text" id="set-topping-aktif" class="form-control">
-											<span class="help-block">9</span>
-										</div>
-										<input type="submit" class="btn btn-primary" value="save">
-										<!-- 
-											<div class="form-group">
-											<label for="adjust-deret-topping" class="control-label">deret topping</label>
-											<input type="text" id="adjust-deret-topping" class="form-control">
-											<span class="help-block">9-9-9-9</span>
-										</div> 
-										<input type="submit" class="btn btn-primary" value="save"> -->
-									</form>
-								</div>
-							</div>
-						</div>
+						
 						<!-- END BOOTSTRAP PROGRESS BARS -->
 					</div>
 				</div>

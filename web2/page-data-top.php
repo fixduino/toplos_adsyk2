@@ -45,15 +45,13 @@ $data = $topping->getAll();
 					<a href="index.php"><img src="assets/img/logo.png" alt="DiffDash Logo" class="img-responsive logo"></a>
 				</div>
 				<!-- end logo -->
+				<!-- end navbar menu -->
 				<div class="navbar-right">
 					<!-- search form -->
-					<form id="navbar-search" class="navbar-form search-form">
+					<!--<form id="navbar-search" class="navbar-form search-form">
 						<input value="" class="form-control" placeholder="Search here..." type="text">
 						<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
-					</form>
-					<!-- end search form -->
-					<!-- navbar menu -->
-					<!--
+					</form> -->
 					<div id="navbar-menu">
 						<ul class="nav navbar-nav">
 							<li class="dropdown">
@@ -131,58 +129,13 @@ $data = $topping->getAll();
 									<li class="footer"><a href="#" class="more">See all notifications</a></li>
 								</ul>
 							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-									<i class="lnr lnr-cog"></i>
-								</a>
-								<ul class="dropdown-menu user-menu menu-icon">
-									<li class="menu-heading">ACCOUNT SETTINGS</li>
-									<li><a href="#"><i class="fa fa-fw fa-edit"></i> <span>Basic</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-bell"></i> <span>Notifications</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-sliders"></i> <span>Preferences</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-lock"></i> <span>Privacy</span></a></li>
-									<li class="menu-heading">BILLING</li>
-									<li><a href="#"><i class="fa fa-fw fa-file-text-o"></i> <span>Invoices</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-credit-card"></i> <span>Payments</span></a></li>
-									<li><a href="#"><i class="fa fa-fw fa-refresh"></i> <span>Renewals</span></a></li>
-									<li class="menu-button">
-										<a href="#" class="btn btn-primary"><i class="fa fa-rocket"></i> UPGRADE PLAN</a>
-									</li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-									<i class="lnr lnr-question-circle"></i>
-								</a>
-								<ul class="dropdown-menu user-menu">
-									<li>
-										<form class="search-form help-search-form">
-											<input value="" class="form-control" placeholder="How can we help?" type="text">
-											<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
-										</form>
-									</li>
-									<li class="menu-heading">HOW-TO</li>
-									<li><a href="#">Setting up Campaign</a></li>
-									<li><a href="#">Understanding Website Analytics</a></li>
-									<li><a href="#">Boost Your Sales</a></li>
-									<li><a href="#">Knowing Your Audience</a></li>
-									<li class="menu-heading">ACCOUNT</li>
-									<li><a href="#">Change Password</a></li>
-									<li><a href="#">Privacy &amp; Security</a></li>
-									<li><a href="#">Membership</a></li>
-									<li class="menu-heading">BILLING</li>
-									<li><a href="#">Setup Payment</a></li>
-									<li><a href="#">Auto-Renewal Program</a></li>
-									<li><a href="#">Cancellation</a></li>
-									<li class="menu-button">
-										<a href="#" class="btn btn-primary"><i class="fa fa-question-circle"></i> HELP CENTER</a>
-									</li>
-								</ul>
-							</li>
 						</ul>
-					</div> -->
-					<!-- end navbar menu -->
+					</div>
+						
+					<!-- end search form -->
+					
 				</div>
+			
 			</div>
 		</nav>
 		<!-- END NAVBAR -->
@@ -206,49 +159,20 @@ $data = $topping->getAll();
 					</div>
 				</div>
 				<nav id="left-sidebar-nav" class="sidebar-nav">
-					<ul id="main-menu" class="metismenu">
-						<li class="active"><a href="index.php"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li class="">
-							<a href="page-data-tangki.php"><i class="lnr lnr lnr-drop"></i> <span>Data Tangki</span></a>
-							<!-- <ul aria-expanded="true">
-								<li class=""><a href="ui-tabs.html">Tabs</a></li>
-								<li class=""><a href="ui-buttons.html">Buttons</a></li>
-								<li class=""><a href="ui-bootstrap.html">Bootstrap UI</a></li>
-								<li class=""><a href="ui-icons.html"><span>Icons</span></a></li>
-							</ul> -->
-						</li>
-						<li class="">
-							<a href="forms-advanced.html"><i class="lnr lnr-chart-bars"></i> <span>Topping/Penyaluran</span></a>
-							<!-- <ul aria-expanded="true">
-								<li class=""><a href="page-profile.html">User Profile</a></li>
-								<li class=""><a href="page-login.html">Login</a></li>
-								<li class=""><a href="page-register.html">Register</a></li>
-								<li class=""><a href="page-lockscreen.html">Lockscreen</a></li>
-								<li class=""><a href="page-forgot-password.html">Forgot Password</a></li>
-								<li class=""><a href="page-404.html">Page 404</a></li>
-								<li class=""><a href="page-500.html">Page 500</a></li>
-							</ul> -->
-						</li>
-						<!-- <li class="">
-							<a href="#forms" class="has-arrow" aria-expanded="false"><i class="lnr lnr-pencil"></i> <span>Forms</span></a>
-							<ul aria-expanded="true">
-								<li class=""><a href="forms-validation.html">Form Validation</a></li>
-								<li class=""><a href="forms-advanced.html">Advanced Form Elements</a></li>
-								<li class=""><a href="forms-basic.html">Basic Form Elements</a></li>
-								<li class=""><a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a></li>
-								<li class=""><a href="forms-texteditor.html">Text Editor</a></li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#charts" class="has-arrow" aria-expanded="false"><i class="lnr lnr-chart-bars"></i> <span>Charts</span></a>
-							<ul aria-expanded="true">
-								<li class=""><a href="charts-chartist.html">Chartist</a></li>
-								<li class=""><a href="charts-sparkline.html">Sparkline Chart</a></li>
-							</ul>
-						</li>
-						<li class=""><a href="notifications.html"><i class="lnr lnr-alarm"></i> <span>Notifications</span> <span class="badge bg-danger">15</span></a></li>
-						<li class=""><a href="typography.html"><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li> -->
-					</ul>
+				<ul id="main-menu" class="metismenu">
+					<li class="active">
+						<a href="index.php" class="has-arrow"><i class="lnr lnr-home"></i> <span>Dashboard</span></a>
+					</li>
+					<li class="">
+						<a href="page-data-tangki.php" class="has-arrow"><i class="lnr lnr lnr-drop"></i> <span>Tangki</span></a>
+					</li>
+					<li class="">
+						<a href="page-data-top.php" class="has-arrow"><i class="lnr lnr-chart-bars"></i> <span>Topping</span></a>
+					</li>
+					<li class="">
+						<a href="page-setting.php" class="has-arrow" aria-expanded="false"><i class="lnr lnr-cog"></i> <span>Setting</span></a>
+					</li>
+				</ul>
 				</nav>
 				<!-- <div style="padding: 30px; text-align: center;">
 					<h2 style="font-size: 16px; margin-bottom: 15px; font-weight: 700;">Other Similar Template</h2>

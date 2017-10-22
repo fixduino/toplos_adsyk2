@@ -52,10 +52,90 @@ $data = $topping->get4();
 				<!-- end logo -->
 				<div class="navbar-right">
 					<!-- search form -->
-					<form id="navbar-search" class="navbar-form search-form">
+					<!--<form id="navbar-search" class="navbar-form search-form">
 						<input value="" class="form-control" placeholder="Search here..." type="text">
 						<button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
-					</form>
+					</form> -->
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+									<i class="lnr lnr-alarm"></i>
+									<span class="notification-dot"></span>
+								</a>
+								<ul class="dropdown-menu notifications">
+									<li class="header"><strong>You have 7 new notifications</strong></li>
+									<li>
+										<a href="#">
+											<div class="media">
+												<div class="media-left">
+													<i class="fa fa-fw fa-flag-checkered text-muted"></i>
+												</div>
+												<div class="media-body">
+													<p class="text">Your campaign <strong>Holiday Sale</strong> is starting to engage potential customers.</p>
+													<span class="timestamp">24 minutes ago</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="media">
+												<div class="media-left">
+													<i class="fa fa-fw fa-exclamation-triangle text-warning"></i>
+												</div>
+												<div class="media-body">
+													<p class="text">Campaign <strong>Holiday Sale</strong> is nearly reach budget limit.</p>
+													<span class="timestamp">2 hours ago</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="media">
+												<div class="media-left">
+													<i class="fa fa-fw fa-bar-chart text-muted"></i>
+												</div>
+												<div class="media-body">
+													<p class="text">Website visits from Facebook is 27% higher than last week.</p>
+													<span class="timestamp">Yesterday</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="media">
+												<div class="media-left">
+													<i class="fa fa-fw fa-check-circle text-success"></i>
+												</div>
+												<div class="media-body">
+													<p class="text">Your campaign <strong>Holiday Sale</strong> is approved.</p>
+													<span class="timestamp">2 days ago</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="media">
+												<div class="media-left">
+													<i class="fa fa-fw fa-exclamation-circle text-danger"></i>
+												</div>
+												<div class="media-body">
+													<p class="text">Error on website analytics configurations</p>
+													<span class="timestamp">3 days ago</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="footer"><a href="#" class="more">See all notifications</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+						
 					<!-- end search form -->
 					
 				</div>
@@ -83,47 +163,18 @@ $data = $topping->get4();
 				</div>
 				<nav id="left-sidebar-nav" class="sidebar-nav">
 					<ul id="main-menu" class="metismenu">
-						<li class="active"><a href="index.php"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li class="">
-							<a href="page-data-tangki.php"><i class="lnr lnr lnr-drop"></i> <span>Data Tangki</span></a>
-							<!-- <ul aria-expanded="true">
-								<li class=""><a href="ui-tabs.html">Tabs</a></li>
-								<li class=""><a href="ui-buttons.html">Buttons</a></li>
-								<li class=""><a href="ui-bootstrap.html">Bootstrap UI</a></li>
-								<li class=""><a href="ui-icons.html"><span>Icons</span></a></li>
-							</ul> -->
+						<li class="active">
+							<a href="index.php" class="has-arrow"><i class="lnr lnr-home"></i> <span>Dashboard</span></a>
 						</li>
 						<li class="">
-						<a href="page-data-top.php"><i class="lnr lnr-chart-bars"></i> <span>Topping/Penyaluran</span></a>
-							<!-- <ul aria-expanded="true">
-								<li class=""><a href="page-profile.html">User Profile</a></li>
-								<li class=""><a href="page-login.html">Login</a></li>
-								<li class=""><a href="page-register.html">Register</a></li>
-								<li class=""><a href="page-lockscreen.html">Lockscreen</a></li>
-								<li class=""><a href="page-forgot-password.html">Forgot Password</a></li>
-								<li class=""><a href="page-404.html">Page 404</a></li>
-								<li class=""><a href="page-500.html">Page 500</a></li>
-							</ul> -->
-						</li>
-						<!-- <li class="">
-							<a href="#forms" class="has-arrow" aria-expanded="false"><i class="lnr lnr-pencil"></i> <span>Forms</span></a>
-							<ul aria-expanded="true">
-								<li class=""><a href="forms-validation.html">Form Validation</a></li>
-								<li class=""><a href="forms-advanced.html">Advanced Form Elements</a></li>
-								<li class=""><a href="forms-basic.html">Basic Form Elements</a></li>
-								<li class=""><a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a></li>
-								<li class=""><a href="forms-texteditor.html">Text Editor</a></li>
-							</ul>
+							<a href="page-data-tangki.php" class="has-arrow"><i class="lnr lnr lnr-drop"></i> <span>Tangki</span></a>
 						</li>
 						<li class="">
-							<a href="#charts" class="has-arrow" aria-expanded="false"><i class="lnr lnr-chart-bars"></i> <span>Charts</span></a>
-							<ul aria-expanded="true">
-								<li class=""><a href="charts-chartist.html">Chartist</a></li>
-								<li class=""><a href="charts-sparkline.html">Sparkline Chart</a></li>
-							</ul>
+							<a href="page-data-top.php" class="has-arrow"><i class="lnr lnr-chart-bars"></i> <span>Topping</span></a>
 						</li>
-						<li class=""><a href="notifications.html"><i class="lnr lnr-alarm"></i> <span>Notifications</span> <span class="badge bg-danger">15</span></a></li>
-						<li class=""><a href="typography.html"><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li> -->
+						 <li class="">
+							<a href="page-setting.php" class="has-arrow" aria-expanded="false"><i class="lnr lnr-cog"></i> <span>Setting</span></a>
+						</li>
 					</ul>
 				</nav>
 				<!-- <div style="padding: 30px; text-align: center;">
@@ -150,8 +201,9 @@ $data = $topping->get4();
 								<div class="number-chart">
 									<div class="mini-stat">
 										<!--<div id="number-chart1" class="inlinesparkline">23,65,89,32,67,38,63,12,34,22</div>-->
-										<img src="./assets/img/topping.png" class="img-rounded" alt="Topping" width="50%" height="50%"> 
-										
+									<img src="./assets/img/topping.png" class="img-rounded" alt="Topping" width="25%" height="25%"> 
+										<!-- <i class="fa fa-database fa-5x"></i> -->
+							
 										<!-- <p class="text-muted"><i class="fa fa-caret-up text-success"></i> 19% compared to last week</p> -->
 									</div>
 									<div class="number"><span>22,500 KL</span> <span>Total Topping</span></div>
@@ -162,7 +214,7 @@ $data = $topping->get4();
 									<div class="mini-stat">
 										<!--<div id="number-chart2" class="inlinesparkline">77,44,10,80,88,87,19,59,83,88</div> -->
 										<!-- <p class="text-muted"><i class="fa fa-caret-up text-success"></i> 24% compared to last week</p> -->
-										<img src="./assets/img/lossing.png" class="img-rounded" alt="Topping" width="50%" height="50%"> 
+										<img src="./assets/img/lossing.png" class="img-rounded" alt="Topping" width="30%" height="30%"> 
 										
 									</div>
 									<div class="number"><span>245 KL</span> <span>Total Lossing</span></div>
@@ -173,7 +225,7 @@ $data = $topping->get4();
 									<div class="mini-stat">
 										<!--<div id="number-chart3" class="inlinesparkline">99,86,31,72,62,94,50,18,74,18</div>-->
 										<!-- <p class="text-muted"><i class="fa fa-caret-up text-success"></i> 44% compared to last week</p> -->
-										<img src="./assets/img/tangki2.png" class="img-rounded" alt="Topping" width="50%" height="50%"> 
+										<img src="./assets/img/tangki2.png" class="img-rounded" alt="Topping" width="30%" height="30%"> 
 										
 									</div>
 									<div class="number"><span>1 - 2 - 3 - 4</span> <span>Tangki Topping</span></div>
@@ -184,7 +236,7 @@ $data = $topping->get4();
 									<div class="mini-stat">
 										<!-- <div id="number-chart4" class="inlinesparkline">28,44,70,21,86,54,90,25,83,42</div> -->
 										<!-- <p class="text-muted"><i class="fa fa-caret-down text-danger"></i> 6% compared to last week</p> -->
-										<img src="./assets/img/tangki2.png" class="img-rounded" alt="Topping" width="50%" height="50%"> 
+										<img src="./assets/img/tangki2.png" class="img-rounded" alt="Topping" width="30%" height="30%"> 
 										
 									</div>
 									<div class="number"><span>5 - 6 - 7 - 8</span> <span>Tangki Lossing</span></div>
@@ -481,7 +533,7 @@ $data = $topping->get4();
 		toastr.options.closeButton = true;
 		toastr.options.positionClass = 'toast-bottom-right';
 		toastr.options.showDuration = 1000;
-		toastr['info']('Hello, welcome to pertamina, DPPU ADISUTJIPTO.');
+		toastr['info']('Hello, welcome to PERTAMINA DPPU ADISUCIPTO.');
 
 	});
 	</script>
