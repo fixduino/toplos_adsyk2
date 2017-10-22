@@ -28,6 +28,34 @@ class Topping extends DBConnect {
         $data = $sth->fetchAll();
         return $data;
     }
+    public function getTopActive(){
+        $sth = $this->DBH->prepare('SELECT id FROM tb_tank WHERE status="201"');
+        $sth->execute();
+
+        $dataTopActive = $sth->fetchAll();
+        return $dataTopActive;
+    }
+    public function getTopLain(){
+        $sth = $this->DBH->prepare('SELECT id FROM tb_tank WHERE status="101"');
+        $sth->execute();
+
+        $dataTopLain = $sth->fetchAll();
+        return $dataTopLain;
+    }
+    public function getLosActive(){
+        $sth = $this->DBH->prepare('SELECT id FROM tb_tank WHERE status="202"');
+        $sth->execute();
+
+        $dataLosActive = $sth->fetchAll();
+        return $dataLosActive;
+    }
+    public function getLosLain(){
+        $sth = $this->DBH->prepare('SELECT id FROM tb_tank WHERE status="102"');
+        $sth->execute();
+
+        $dataLosLain = $sth->fetchAll();
+        return $dataLosLain;
+    }
     public function get($id) {
         $sth = $this->DBH->prepare('SELECT id,time,ref,qty_req,tank_asal Form tb_topp');
         $sth->execute(array($id));

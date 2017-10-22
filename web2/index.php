@@ -8,6 +8,20 @@ require_once 'DBConnect.php';
 require_once 'topping.php';
 $topping = new Topping();
 $data = $topping->get4();
+
+$topA = new Topping();
+$dataTopActive = $topA ->getTopActive();
+
+$topB = new Topping();
+$dataTopLain = $topB ->getTopLain();
+
+$losC = new Topping();
+$dataLosActive = $losC ->getLosActive();
+
+$losD = new Topping();
+$dataLosLain = $losD ->getLosLain();
+
+
 ?>
 
 <head>
@@ -228,7 +242,29 @@ $data = $topping->get4();
 										<img src="./assets/img/tangki2.png" class="img-rounded" alt="Topping" width="30%" height="30%"> 
 										
 									</div>
-									<div class="number"><span>1 - 2 - 3 - 4</span> <span>Tangki Topping</span></div>
+
+									<?php
+									$topLaine="";
+									if (count($dataTopLain)):
+										foreach ($dataTopLain as $key => $value):
+										$topLaine .= $value['id'].'-'; 	
+										endforeach;
+									endif;
+									$topLaine= substr($topLaine, 0, strlen($topLaine) - 1);
+									
+									?>
+
+									<?php
+									if (count($dataTopActive)):
+										foreach ($dataTopActive as $key => $value):
+									?>
+
+									
+									<div class="number"><span><?php echo '<b>'.$value['id'].'</b> -'.$topLaine ?></span> <span>Tangki Topping</span></div>
+									<?php
+									endforeach;
+								endif;
+								?>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
@@ -239,7 +275,30 @@ $data = $topping->get4();
 										<img src="./assets/img/tangki2.png" class="img-rounded" alt="Topping" width="30%" height="30%"> 
 										
 									</div>
-									<div class="number"><span>5 - 6 - 7 - 8</span> <span>Tangki Lossing</span></div>
+									<!-- <div class="number"><span>5 - 6 - 7 - 8</span> <span>Tangki Lossing</span></div> -->
+
+									<?php
+									$losLaine="";
+									if (count($dataLosLain)):
+										foreach ($dataLosLain as $key => $value):
+										$losLaine .= $value['id'].'-'; 	
+										endforeach;
+									endif;
+									$losLaine= substr($losLaine, 0, strlen($losLaine) - 1);
+									
+									?>
+
+									<?php
+									if (count($dataLosActive)):
+										foreach ($dataLosActive as $key => $value):
+									?>
+
+									
+									<div class="number"><span><?php echo '<b>'.$value['id'].'</b> -'.$losLaine ?></span> <span>Tangki Lossing</span></div>
+									<?php
+									endforeach;
+								endif;
+								?>
 								</div>
 							</div>
 						</div>
